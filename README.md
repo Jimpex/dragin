@@ -1,6 +1,6 @@
 # for dragin using typescript, deno, and fresh.
 
-# fresh project
+## Requires deno to be installed ([deno.land](https://deno.land/))
 
 ### Usage
 
