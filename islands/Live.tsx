@@ -24,7 +24,6 @@ export default function Live() {
     const interval = setInterval(checkLive, 60 * 1000);
     return () => clearInterval(interval);
   }, []);
-  const message = "DRAGINAIR is offline.. ;(\nClick the button while you wait!";
 
   return (
     <div>

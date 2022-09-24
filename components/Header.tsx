@@ -9,7 +9,7 @@ export function Header(props: JSX.HTMLAttributes<HTMLButtonElement>) {
         alt="the fresh logo: a sliced lemon dripping with juice shadow-lg"
       />
       {/* <span class="font-bold text-white inline-block align-middle">
-        DRAGINAIR
+        DraginAir
       </span> */}
     </div>
   );

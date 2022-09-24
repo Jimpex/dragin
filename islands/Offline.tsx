@@ -7,7 +7,7 @@ interface CounterProps {
 
 export default function Offline(props: CounterProps) {
   const [count, setCount] = useState(props.start);
-  const message = "DRAGINAIR is offline.. ;(\nClick the button while you wait!";
+  const message = "DraginAir is offline.. ;(\nClick the button while you wait!";
   return (
     <div>
       <p class="text-center pb-3">{message}</p>

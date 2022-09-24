@@ -4,7 +4,7 @@ export function Footer(props: JSX.HTMLAttributes<HTMLButtonElement>) {
   return (
     <footer class="absolute bottom-0 w-screen text-center lg:text-left bg-gray-100 text-gray-600">
       <div class="text-center p-6 bg-gray-200">
-        <p>Made by Jimpex for DRAGINAIR</p>
+        <p>Made by Jimpex for DraginAIR</p>
         {/* <span>© 2021 Copyright:</span> */}
         <a
           target="_blank"
