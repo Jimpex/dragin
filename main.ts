@@ -11,8 +11,11 @@ import twindPlugin from "$fresh/plugins/twind.ts";
 import twindConfig from "./twind.config.ts";
 
 import { config as dotEnvConfig } from "dotenv";
-const env = dotEnvConfig();
-Deno.env.set("CLIENT_ID", env.CLIENT_ID);
-Deno.env.set("AUTHORIZATION", env.AUTHORIZATION);
+// If not already defined, define (already defined in prod envirements)
+if (!Deno.env.get("CLIENT_ID")) {
+  const env = dotEnvConfig();
+  Deno.env.set("CLIENT_ID", env.CLIENT_ID);
+  Deno.env.set("AUTHORIZATION", env.AUTHORIZATION);
+}
 
 await start(manifest, { plugins: [twindPlugin(twindConfig)] });
